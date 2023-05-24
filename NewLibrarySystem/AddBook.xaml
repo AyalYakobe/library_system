@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="NewLibrarySystem.VIEWS.AddBook"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewLibrarySystem.VIEWS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="grid3" Margin="-1,0,1,0">
+        <TextBlock x:Name="pageTitle" Text="Page 3"/>
+        <HyperlinkButton Content="Click to go to previous page" Click="HyperlinkButton_Click" Margin="49,439,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBtnFiction" Content="Fiction" Margin="56,142,0,0" VerticalAlignment="Top"/>
+        <RadioButton  x:Name="radioBtnNonFiction" Content="NonFiction" Margin="155,142,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxTitle"  Margin="128,203,0,0" Text="The Catcher in the Rye" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxPrice" Margin="128,319,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxGenre" Margin="128,281,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxContributingAuthors" Margin="540,265,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxNonFictionAwards" Margin="540,304,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" />
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxAuthor" Margin="128,242,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxMovies" Margin="540,188,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxQuantity" Margin="128,357,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxRealistic" Margin="540,226,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <TextBlock HorizontalAlignment="Left" Margin="87,209,0,0" Text="Title" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,287,0,0" Text="Genre" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="74,249,0,0" Text="Author" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="67,360,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="84,325,0,0" Text="Price" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtBlockThoughtProvoking" Margin="392,193,0,0" Text="Movies Based on Book" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtBlockRealistic" Margin="482,233,0,0" Text="Realistic" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtBlockContributingAuthors" Margin="401,268,0,0" Text="Contributing Authors" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="txtBlockNonFictionAwards" Margin="415,306,0,0" Text="NonFiction Awards" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Add" x:Name="btnEnter" Margin="487,439,0,0" VerticalAlignment="Top" Width="193" Click="btnEnter_Click_1"/>
+        <Button Content="Update" x:Name="btnUpdate" Margin="299,439,0,0" VerticalAlignment="Top" Width="184" Click="btnUpdate_Click"/>
+        <TextBox HorizontalAlignment="Left"  x:Name="txtBoxDiscount" Margin="945,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"/>
+        <TextBlock HorizontalAlignment="Left" Margin="828,255,0,0" Text="Enter Discount" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Execute" x:Name="btnDiscount" Margin="954,316,0,0" VerticalAlignment="Top" Click="btnDiscount_Click" Width="133"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxDiscountCategory" Margin="946,206,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBlock HorizontalAlignment="Left" Margin="742,215,0,0" Text="Enter an author, genre, or title" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="193"/>
+        <CheckBox x:Name="checkAuthor" Content="" Margin="40,241,0,0" VerticalAlignment="Top" Click="checkAuthor_Click"/>
+        <CheckBox x:Name="checkGenre" Content="" Margin="40,276,0,0" VerticalAlignment="Top" Click="checkGenre_Click"/>
+        <CheckBox x:Name="checkPrice" Content="" Margin="40,311,0,0" VerticalAlignment="Top" Click="checkPrice_Click"/>
+        <CheckBox x:Name="checkQuantity" Content="" Margin="40,348,0,0" VerticalAlignment="Top" Click="checkQuantity_Click"/>
+        <CheckBox x:Name="checkMovie" Content="" Margin="353,187,0,0" VerticalAlignment="Top" Click="checkMovie_Click"/>
+        <CheckBox x:Name="checkRealistic" Content="" Margin="353,224,0,0" VerticalAlignment="Top" Click="checkRealistic_Click"/>
+        <CheckBox x:Name="checkContributing" Content="" Margin="353,261,0,0" VerticalAlignment="Top" Click="checkContributing_Click"/>
+        <CheckBox x:Name="checkAwards" Content="" Margin="353,293,0,0" Click="checkAwards_Click" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkTitle" Content="" Margin="40,206,0,0" VerticalAlignment="Top" Width="48" Height="30" Click="checkTitle_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="283,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="69" Width="528"><Run Text="Select "/><Run Text=" and fill "/><Run Text="the fields you would like to update. To update a book, the title must match a book already found our system."/><Run Text=" "/><Run Text="Additionally, note that if a book is to be added, all relevant fields must be "/><Run Text="filled."/></TextBlock>
+    </Grid>
+</Page>

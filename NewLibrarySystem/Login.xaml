@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="NewLibrarySystem.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewLibrarySystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <TextBlock x:Name="pageTitle" Text="Page 1"  />
+        <TextBox HorizontalAlignment="Left" x:Name="txtBoxUserName" Margin="577,170,0,0" Text="Ayal_Yakobe" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="300"/>
+        <PasswordBox HorizontalAlignment="Left" x:Name="txtBoxPassword" Margin="578,238,0,0" VerticalAlignment="Top" Height="40" Width="300" Password="ayaliscool123"/>
+        <TextBlock HorizontalAlignment="Left" Margin="485,177,0,0" Text="Username:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,247,0,0" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Enter" x:Name="btnEnterID" Margin="718,298,0,0" VerticalAlignment="Top" Width="161" Click="btnEnterID_Click_1"/>
+        <CheckBox Content="Are you a guest?" x:Name="checkBoxGuest" Margin="571,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.725,0.203"/>
+        <TextBlock HorizontalAlignment="Left" Margin="258,176,0,0" FontSize="50" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="165"/>
+
+    </Grid>
+</Page>
